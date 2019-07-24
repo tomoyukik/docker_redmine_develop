@@ -1,0 +1,15 @@
+version: '3'
+
+volumes:
+  redmine-volume:
+    external: true
+  postgresql-volume:
+    external: true
+
+services:
+  redmine:
+    volumes:
+      - redmine-volume:/redmine
+  postgres:
+    volumes:
+      - postgresql-volume:/var/lib/postgesql/data

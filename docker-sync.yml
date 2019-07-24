@@ -1,0 +1,9 @@
+version: '2'
+
+syncs:
+  redmine-volume:
+    src: ./redmine
+    sync_strategy: unison
+  postgresql-volume:
+    src: ./postgres
+    sync_strategy: unison
