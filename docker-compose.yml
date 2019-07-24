@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  redmine:
+    build: .
+    image: redmine:4
+    environment:
+      BUNDLE_PATH: /redmine/vendor/bundle
+      RAILS_ENV: development
+      DB_HOST_NAME: postgres
+    volumes:
+      - ./redmine:/redmine
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+      - chrome
+  postgres:
+    image: postgres:9.6
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+  selenium-hub:
+    image: selenium/hub:3.141.59-selenium
+    ports:
+      - 4444:4444
+  chrome:
+    image: selenium/node-chrome-debug:3.141.59-selenium
+    shm_size: 2g
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+    ports:
+      - 5900:5900
