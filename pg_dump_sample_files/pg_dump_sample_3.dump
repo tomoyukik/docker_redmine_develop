@@ -1,0 +1,1664 @@
+--
+-- Data for Name: ar_internal_metadata; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.ar_internal_metadata (key, value, created_at, updated_at) FROM stdin;
+environment	development	2019-07-24 13:23:04.097308	2019-07-24 13:23:04.097308
+\.
+
+
+--
+-- Data for Name: attachments; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.attachments (id, container_id, container_type, filename, disk_filename, filesize, content_type, digest, downloads, author_id, created_on, description, disk_directory) FROM stdin;
+1	3	Issue	error281.txt	060719210727_error281.txt	28	text/plain	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	An attachment	2006/07
+2	1	Document	document.txt	060719210727_document.txt	28	text/plain	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2007-01-27 14:08:27	\N	2006/07
+3	4	WikiPage	logo.gif	060719210727_logo.gif	280	image/gif	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	This is a logo	2006/07
+4	2	Issue	source.rb	060719210727_source.rb	153	application/x-ruby	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	This is a Ruby source file	2006/07
+5	3	Issue	changeset_iso8859-1.diff	060719210727_changeset_iso8859-1.diff	687	text/x-diff	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	\N	2006/07
+6	3	Issue	archive.zip	060719210727_archive.zip	157	application/zip	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	\N	2006/07
+7	4	Issue	archive.zip	060719210727_archive.zip	157	application/zip	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	1	2006-07-19 19:07:27	\N	2006/07
+8	1	Project	project_file.zip	060719210727_project_file.zip	320	application/octet-stream	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	\N	2006/07
+9	1	Version	version_file.zip	060719210727_archive.zip	452	application/octet-stream	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	\N	2006/07
+10	2	Issue	picture.jpg	060719210727_picture.jpg	452	image/jpeg	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	\N	2006/07
+11	1	Document	picture.jpg	060719210727_picture.jpg	452	image/jpeg	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2007-02-12 14:08:27	\N	2006/07
+12	1	Version	version_file.zip	060719210727_version_file.zip	452	application/octet-stream	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	\N	2006/07
+13	1	Message	foo.zip	060719210727_foo.zip	452	application/octet-stream	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	\N	2006/07
+14	3	Issue	changeset_utf8.diff	060719210727_changeset_utf8.diff	687	text/x-diff	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2006-07-19 19:07:27	\N	2006/07
+15	14	Issue	private.diff	060719210727_changeset_utf8.diff	687	text/x-diff	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	2	2010-07-19 19:07:27	attachement of a private issue	2006/07
+16	14	Issue	testfile.png	101123161450_testfile_1.png	2654	image/png	8e0294de2441577c529f170b6fb8f638	0	2	2010-11-23 07:14:50		2010/11
+17	14	Issue	testfile.PNG	101223161450_testfile_2.png	3582	image/png	6bc2963e8d7ea0d3e68d12d1fba3d6ca	0	2	2010-12-23 07:14:50		2010/12
+18	14	Issue	testテスト.png	101123161450_testfile_1.png	2654	image/png	8e0294de2441577c529f170b6fb8f638	0	2	2011-01-23 07:14:50		2010/11
+19	14	Issue	Testテスト.PNG	101223161450_testfile_2.png	3582	image/png	6bc2963e8d7ea0d3e68d12d1fba3d6ca	0	2	2011-02-23 07:14:50		2010/12
+20	14	Issue	root_attachment.txt	120512161450_root_attachment.txt	54	text/plain	b0fe2abdb2599743d554a61d7da7ff74	0	2	2012-05-12 07:14:50		\N
+21	3	Document	archive.zip	060719210727_archive.zip	157	application/zip	b91e08d0cf966d5c6ff411bd8c4cc3a2	0	1	2007-03-05 14:08:27	\N	2006/07
+22	1	Project	redmine_logo.ai.unknown	190430092344_redmine_logo.ai.unknown	4994	\N	68d90c016f0806d88234a6f16530fdf0b7f1d2481354798f1a5fd165dca6b04f	0	1	2019-04-30 00:23:44	unknown type	2019/04
+23	1	WikiPage	ecookbook-gantt.pdf	190511141819_ecookbook-gantt.pdf	31620	application/pdf	da9c52e79d9eee7d47b9ee5db477985c542ea683e9f23ed32db55e35ef99c479	0	2	2019-05-11 05:18:19	Gantt chart as of May 11	2019/05
+\.
+
+
+--
+-- Name: attachments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.attachments_id_seq', 23, true);
+
+
+--
+-- Data for Name: auth_sources; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.auth_sources (id, type, name, host, port, account, account_password, base_dn, attr_login, attr_firstname, attr_lastname, attr_mail, onthefly_register, tls, filter, timeout, verify_peer) FROM stdin;
+1	AuthSourceLdap	LDAP test server		389	\N		OU=Person,DC=redmine,DC=org	uid	givenName	sn	mail	f	f	\N	\N	t
+\.
+
+
+--
+-- Name: auth_sources_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.auth_sources_id_seq', 1, true);
+
+
+--
+-- Data for Name: boards; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.boards (id, project_id, name, description, "position", topics_count, messages_count, last_message_id, parent_id) FROM stdin;
+1	1	Help	Help board	1	2	6	6	\N
+2	1	Discussion	Discussion board	2	0	0	\N	\N
+3	2	Discussion	Discussion board	1	0	0	\N	\N
+\.
+
+
+--
+-- Name: boards_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.boards_id_seq', 3, true);
+
+
+--
+-- Data for Name: changes; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.changes (id, changeset_id, action, path, from_path, from_revision, revision, branch) FROM stdin;
+1	100	A	/test/some/path/in/the/repo	\N	\N	\N	\N
+2	100	A	/test/some/path/elsewhere/in/the/repo	\N	\N	\N	\N
+3	101	M	/test/some/path/in/the/repo	\N	\N	\N	\N
+\.
+
+
+--
+-- Name: changes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.changes_id_seq', 3, true);
+
+
+--
+-- Data for Name: changeset_parents; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.changeset_parents (changeset_id, parent_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: changesets; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.changesets (id, repository_id, revision, committer, committed_on, comments, commit_date, scmid, user_id) FROM stdin;
+100	10	1	dlopper	2007-04-11 13:14:44	My very first commit do not escaping #<>&	2007-04-11	691322a8eb01e11fd7	3
+101	10	2	dlopper	2007-04-12 13:14:44	This commit fixes #1, #2 and references #1 & #3	2007-04-12	\N	3
+102	10	3	dlopper	2007-04-12 13:14:44	A commit with wrong issue ids\nIssueID #666 #3	2007-04-12	\N	3
+103	10	4	dlopper	2007-04-12 13:14:44	A commit with an issue id of an other project\nIssueID 4 2	2007-04-12	\N	3
+104	10	5	dlopper	2007-09-10 19:01:08	Modified one file in the folder.	2007-09-10	\N	3
+105	10	6	dlopper	2007-09-10 19:01:47	Moved helloworld.rb from / to /folder.	2007-09-10	\N	3
+106	10	7	dlopper	2007-09-10 19:02:16	Removed one file.	2007-09-10	\N	3
+107	10	8	dlopper	2007-09-10 19:04:35	This commits references an issue.\nRefs #2	2007-09-10	\N	3
+108	10	9	dlopper	2009-09-10 19:04:35	One file added.	2009-09-10	\N	3
+109	10	10	dlopper	2009-09-10 19:04:35	Same file modified.	2009-09-10	\N	3
+\.
+
+
+--
+-- Name: changesets_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.changesets_id_seq', 109, true);
+
+
+--
+-- Data for Name: changesets_issues; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.changesets_issues (changeset_id, issue_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: comments; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.comments (id, commented_type, commented_id, author_id, content, created_on, updated_on) FROM stdin;
+1	News	1	1	my first comment	2006-12-10 17:10:10	2006-12-10 17:10:10
+2	News	1	2	This is an other comment	2006-12-10 17:12:10	2006-12-10 17:12:10
+\.
+
+
+--
+-- Name: comments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.comments_id_seq', 2, true);
+
+
+--
+-- Data for Name: custom_field_enumerations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.custom_field_enumerations (id, custom_field_id, name, active, "position") FROM stdin;
+\.
+
+
+--
+-- Name: custom_field_enumerations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.custom_field_enumerations_id_seq', 1, false);
+
+
+--
+-- Data for Name: custom_fields; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.custom_fields (id, type, name, field_format, possible_values, regexp, min_length, max_length, is_required, is_for_all, is_filter, "position", searchable, default_value, editable, visible, multiple, format_store, description) FROM stdin;
+1	IssueCustomField	Database	list	---\n- MySQL\n- PostgreSQL\n- Oracle\n		\N	\N	f	t	t	2	f		t	t	f	\N	\N
+2	IssueCustomField	Searchable field	string			1	100	f	t	t	1	t	Default string	t	t	f	\N	\N
+3	ProjectCustomField	Development status	list	---\n- Stable\n- Beta\n- Alpha\n- Planning\n		\N	\N	f	f	t	1	f		t	t	f	\N	\N
+4	UserCustomField	Phone number	string			\N	\N	f	f	f	1	f		t	t	f	\N	\N
+5	UserCustomField	Money	float			\N	\N	f	f	f	2	f		t	t	f	\N	\N
+6	IssueCustomField	Float field	float			\N	\N	f	t	f	3	f		t	t	f	\N	\N
+7	TimeEntryActivityCustomField	Billable	bool			\N	\N	f	f	t	1	f		t	t	f	\N	\N
+8	IssueCustomField	Custom date	date			\N	\N	f	t	f	4	f		t	t	f	\N	\N
+9	IssueCustomField	Project 1 cf	date			\N	\N	f	f	t	5	f		t	t	f	\N	\N
+10	TimeEntryCustomField	Overtime	bool			\N	\N	f	f	f	1	f	0	t	t	f	\N	\N
+11	CustomField	Binary	list	---\n- !binary |-\n  SGXDqWzDp2prc2Tigqw2NTTDuQ==\n- Other value\n		\N	\N	f	f	f	1	f	\N	t	t	f	\N	\N
+\.
+
+
+--
+-- Name: custom_fields_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.custom_fields_id_seq', 14, true);
+
+
+--
+-- Data for Name: custom_fields_projects; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.custom_fields_projects (custom_field_id, project_id) FROM stdin;
+9	1
+\.
+
+
+--
+-- Data for Name: custom_fields_roles; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.custom_fields_roles (custom_field_id, role_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: custom_fields_trackers; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.custom_fields_trackers (custom_field_id, tracker_id) FROM stdin;
+1	1
+2	1
+2	3
+6	1
+6	2
+6	3
+8	1
+8	2
+8	3
+9	1
+\.
+
+
+--
+-- Data for Name: custom_values; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.custom_values (id, customized_type, customized_id, custom_field_id, value) FROM stdin;
+6	Issue	3	2	125
+7	Project	1	3	Stable
+1	Principal	3	4	
+2	Principal	4	4	01 23 45 67 89
+3	Principal	2	4	01 42 50 00 00
+4	Issue	1	2	125
+5	Issue	2	2	
+8	Issue	3	1	MySQL
+9	Issue	7	2	this is a stringforcustomfield search
+10	Issue	1	6	2.1
+11	Issue	2	6	2.05
+12	Issue	3	6	11.65
+13	Issue	7	6	
+14	Issue	5	6	-7.6
+15	Enumeration	10	7	t
+16	Enumeration	11	7	1
+17	Issue	1	8	2009-12-01
+\.
+
+
+--
+-- Name: custom_values_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.custom_values_id_seq', 21, true);
+
+
+--
+-- Data for Name: documents; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.documents (id, project_id, category_id, title, description, created_on) FROM stdin;
+1	1	1	Test document	Document description	2007-01-27 14:08:27
+2	1	1	An other document		2007-02-12 14:08:27
+3	1	3	An other document 2		2007-03-05 14:08:27
+\.
+
+
+--
+-- Name: documents_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.documents_id_seq', 3, true);
+
+
+--
+-- Data for Name: email_addresses; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.email_addresses (id, user_id, address, is_default, notify, created_on, updated_on) FROM stdin;
+1	1	admin@somenet.foo	t	t	2006-07-19 17:34:07	2006-07-19 17:34:07
+2	2	jsmith@somenet.foo	t	t	2006-07-19 17:34:07	2006-07-19 17:34:07
+3	3	dlopper@somenet.foo	t	t	2006-07-19 17:34:07	2006-07-19 17:34:07
+4	4	rhill@somenet.foo	t	t	2006-07-19 17:34:07	2006-07-19 17:34:07
+5	5	dlopper2@somenet.foo	t	t	2006-07-19 17:34:07	2006-07-19 17:34:07
+7	7	someone@foo.bar	t	t	2006-07-19 17:34:07	2006-07-19 17:34:07
+8	8	miscuser8@foo.bar	t	t	2006-07-19 17:34:07	2006-07-19 17:34:07
+9	9	miscuser9@foo.bar	t	t	2006-07-19 17:34:07	2006-07-19 17:34:07
+\.
+
+
+--
+-- Name: email_addresses_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.email_addresses_id_seq', 10, true);
+
+
+--
+-- Data for Name: enabled_modules; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.enabled_modules (id, project_id, name) FROM stdin;
+1	1	issue_tracking
+2	1	time_tracking
+3	1	news
+4	1	documents
+5	1	files
+6	1	wiki
+7	1	repository
+8	1	boards
+9	3	repository
+10	3	wiki
+11	2	issue_tracking
+12	3	time_tracking
+13	3	issue_tracking
+14	5	issue_tracking
+15	2	wiki
+16	2	boards
+17	1	calendar
+18	1	gantt
+19	2	calendar
+20	2	gantt
+21	3	calendar
+22	3	gantt
+23	5	calendar
+24	5	gantt
+25	2	news
+26	2	repository
+\.
+
+
+--
+-- Name: enabled_modules_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.enabled_modules_id_seq', 36, true);
+
+
+--
+-- Data for Name: enumerations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.enumerations (id, name, "position", is_default, type, active, project_id, parent_id, position_name) FROM stdin;
+1	Uncategorized	1	f	DocumentCategory	t	\N	\N	\N
+2	User documentation	2	f	DocumentCategory	t	\N	\N	\N
+3	Technical documentation	3	f	DocumentCategory	t	\N	\N	\N
+4	Low	1	f	IssuePriority	t	\N	\N	lowest
+5	Normal	2	t	IssuePriority	t	\N	\N	default
+6	High	3	f	IssuePriority	t	\N	\N	high3
+7	Urgent	4	f	IssuePriority	t	\N	\N	high2
+8	Immediate	5	f	IssuePriority	t	\N	\N	highest
+9	Design	1	f	TimeEntryActivity	t	\N	\N	\N
+10	Development	2	t	TimeEntryActivity	t	\N	\N	\N
+11	QA	3	f	TimeEntryActivity	t	\N	\N	\N
+12	Default Enumeration	1	t	Enumeration	t	\N	\N	\N
+13	Another Enumeration	2	f	Enumeration	t	\N	\N	\N
+14	Inactive Activity	4	f	TimeEntryActivity	f	\N	\N	\N
+15	Inactive Priority	6	f	IssuePriority	f	\N	\N	\N
+16	Inactive Document Category	4	f	DocumentCategory	f	\N	\N	\N
+\.
+
+
+--
+-- Name: enumerations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.enumerations_id_seq', 17, true);
+
+
+--
+-- Data for Name: groups_users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.groups_users (group_id, user_id) FROM stdin;
+10	8
+11	8
+\.
+
+
+--
+-- Data for Name: import_items; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.import_items (id, import_id, "position", obj_id, message, unique_id) FROM stdin;
+\.
+
+
+--
+-- Name: import_items_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.import_items_id_seq', 1, false);
+
+
+--
+-- Data for Name: imports; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.imports (id, type, user_id, filename, settings, total_items, finished, created_at, updated_at) FROM stdin;
+\.
+
+
+--
+-- Name: imports_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.imports_id_seq', 1, false);
+
+
+--
+-- Data for Name: issue_categories; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.issue_categories (id, project_id, name, assigned_to_id) FROM stdin;
+1	1	Printing	2
+2	1	Recipes	\N
+3	2	Stock management	\N
+4	2	Printing	\N
+\.
+
+
+--
+-- Name: issue_categories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.issue_categories_id_seq', 4, true);
+
+
+--
+-- Data for Name: issue_relations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.issue_relations (id, issue_from_id, issue_to_id, relation_type, delay) FROM stdin;
+1	10	9	blocks	\N
+2	2	3	relates	\N
+\.
+
+
+--
+-- Name: issue_relations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.issue_relations_id_seq', 2, true);
+
+
+--
+-- Data for Name: issue_statuses; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.issue_statuses (id, name, is_closed, "position", default_done_ratio) FROM stdin;
+1	New	f	1	\N
+2	Assigned	f	2	\N
+3	Resolved	f	3	\N
+4	Feedback	f	4	\N
+5	Closed	t	5	\N
+6	Rejected	t	6	\N
+\.
+
+
+--
+-- Name: issue_statuses_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.issue_statuses_id_seq', 6, true);
+
+
+--
+-- Data for Name: issues; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.issues (id, tracker_id, project_id, subject, description, due_date, category_id, status_id, assigned_to_id, priority_id, fixed_version_id, author_id, lock_version, created_on, updated_on, start_date, done_ratio, estimated_hours, parent_id, root_id, lft, rgt, is_private, closed_on) FROM stdin;
+1	1	1	Cannot print recipes	Unable to print recipes	2019-08-03	1	1	\N	4	\N	2	3	2019-07-21 13:55:36	2019-07-23 13:55:36	2019-07-23	0	200	\N	1	1	2	f	\N
+2	2	1	Add ingredients categories	Ingredients of the recipe should be classified by categories	\N	\N	2	3	5	2	2	3	2006-07-19 19:04:21	2006-07-19 19:09:50	2019-07-22	30	0.5	\N	2	1	2	f	\N
+3	1	1	Error 281 when updating a recipe	Error 281 is encountered when saving a recipe	2019-07-19	\N	1	3	4	\N	2	0	2006-07-19 19:07:27	2006-07-19 19:07:27	2019-07-09	0	1	\N	3	1	2	f	\N
+4	1	2	Issue on project 2	Issue on project 2	\N	\N	1	2	4	\N	2	0	2019-07-19 13:55:36	2019-07-22 13:55:36	\N	0	\N	\N	4	1	2	f	\N
+5	1	3	Subproject issue	This is an issue on a cookbook subproject	\N	\N	1	\N	4	\N	2	0	2019-07-19 13:55:36	2019-07-22 13:55:36	\N	0	2	\N	5	1	2	f	\N
+6	1	5	Issue of a private subproject	This is an issue of a private subproject of cookbook	2019-07-25	\N	1	\N	4	\N	2	0	2019-07-24 13:54:36	2019-07-24 13:54:36	2019-07-24	0	\N	\N	6	1	2	f	\N
+7	1	1	Issue due today	This is an issue that is due today	2019-07-24	\N	1	\N	5	\N	2	0	2019-07-14 13:55:36	2019-07-14 13:55:36	2019-07-14	0	\N	\N	7	1	2	f	\N
+8	1	1	Closed issue	This is a closed issue.	\N	\N	5	\N	5	\N	2	0	2019-07-14 13:55:36	2019-07-14 13:55:36	\N	0	\N	\N	8	1	2	f	2019-07-21 13:55:36
+9	1	5	Blocked Issue	This is an issue that is blocked by issue	2019-07-25	\N	1	\N	5	\N	2	0	2019-07-24 13:54:36	2019-07-24 13:54:36	2019-07-24	0	\N	\N	9	1	2	f	\N
+10	1	5	Issue Doing the Blocking	This is an issue that blocks issue	2019-07-25	\N	1	\N	5	\N	2	0	2019-07-24 13:54:36	2019-07-24 13:54:36	2019-07-24	0	\N	\N	10	1	2	f	\N
+11	1	1	Closed issue on a closed version	\N	\N	1	5	\N	5	1	2	0	2019-07-21 13:55:36	2019-07-23 13:55:36	2019-07-23	0	\N	\N	11	1	2	f	2019-07-23 13:55:36
+12	1	1	Closed issue on a locked version	\N	\N	1	5	\N	5	2	3	0	2019-07-21 13:55:36	2019-07-23 13:55:36	2019-07-23	0	\N	\N	12	1	2	f	2019-07-23 13:55:36
+13	1	3	Subproject issue two	This is a second issue on a cookbook subproject	\N	\N	1	\N	4	\N	2	0	2019-07-19 13:55:36	2019-07-22 13:55:36	\N	0	\N	\N	13	1	2	f	\N
+14	1	3	Private issue on public project	This is a private issue	\N	\N	1	\N	5	\N	2	0	2019-07-09 13:55:36	2019-07-09 13:55:36	\N	0	\N	\N	14	1	2	t	\N
+\.
+
+
+--
+-- Name: issues_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.issues_id_seq', 14, true);
+
+
+--
+-- Data for Name: journal_details; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.journal_details (id, journal_id, property, prop_key, old_value, value) FROM stdin;
+1	1	attr	status_id	1	2
+2	1	attr	done_ratio	40	30
+3	4	attr	fixed_version_id	\N	6
+4	3	attr	description	This word was removed and an other was	This word was and an other was added
+5	3	cf	2	Old value	New value
+6	3	attachment	4	\N	060719210727_picture.jpg
+\.
+
+
+--
+-- Name: journal_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.journal_details_id_seq', 6, true);
+
+
+--
+-- Data for Name: journals; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.journals (id, journalized_id, journalized_type, user_id, notes, created_on, private_notes) FROM stdin;
+1	1	Issue	1	Journal notes	2019-07-22 00:00:00	f
+2	1	Issue	2	Some notes with Redmine links: #2, r2.	2019-07-23 00:00:00	f
+3	2	Issue	2	A comment with inline image: !picture.jpg! and a reference to #1 and r2.	2019-07-23 00:00:00	f
+4	6	Issue	1	A comment with a private version.	2019-07-23 00:00:00	f
+5	14	Issue	2	A comment on a private issue.	2019-07-23 00:00:00	f
+\.
+
+
+--
+-- Name: journals_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.journals_id_seq', 5, true);
+
+
+--
+-- Data for Name: kobori; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.kobori (id) FROM stdin;
+\.
+
+
+--
+-- Name: kobori_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.kobori_id_seq', 1, false);
+
+
+--
+-- Data for Name: member_roles; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.member_roles (id, member_id, role_id, inherited_from) FROM stdin;
+1	1	1	\N
+2	2	2	\N
+3	3	2	\N
+4	4	2	\N
+5	5	1	\N
+6	6	1	\N
+7	6	2	\N
+8	7	1	6
+9	7	2	7
+10	9	2	\N
+11	10	2	10
+12	8	1	\N
+\.
+
+
+--
+-- Name: member_roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.member_roles_id_seq', 12, true);
+
+
+--
+-- Data for Name: members; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.members (id, user_id, project_id, created_on, mail_notification) FROM stdin;
+1	2	1	2006-07-19 17:35:33	t
+2	3	1	2006-07-19 17:35:36	t
+3	2	2	2006-07-19 17:35:36	t
+4	5	1	2006-07-19 17:35:36	t
+5	2	5	2006-07-19 17:35:33	t
+6	10	5	2006-07-19 17:35:33	f
+7	8	5	2006-07-19 17:35:33	f
+8	1	5	2006-07-19 17:35:33	t
+9	11	2	2006-07-19 17:35:33	f
+10	8	2	2006-07-19 17:35:33	f
+\.
+
+
+--
+-- Name: members_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.members_id_seq', 10, true);
+
+
+--
+-- Data for Name: messages; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.messages (id, board_id, parent_id, subject, content, author_id, replies_count, last_reply_id, created_on, updated_on, locked, sticky) FROM stdin;
+1	1	\N	First post	This is the very first post\nin the forum	1	2	3	2007-05-12 15:15:32	2007-05-12 15:15:32	f	0
+2	1	1	First reply	Reply to the first post	1	0	\N	2007-05-12 15:18:00	2007-05-12 15:18:00	f	0
+3	1	1	RE: First post	An other reply	2	0	\N	2007-05-12 15:18:02	2007-05-12 15:18:02	f	0
+4	1	\N	Post 2	This is an other post	\N	2	6	2007-08-12 15:15:32	2007-08-12 15:15:32	f	0
+5	1	4	RE: post 2	Reply to the second post	1	0	\N	2019-07-21 00:00:00	2019-07-21 00:00:00	f	0
+6	1	4	RE: post 2	Another reply to the second post	3	0	\N	2019-07-22 00:00:00	2019-07-22 00:00:00	f	0
+7	3	\N	Message on a private project	This is a private message	1	0	\N	2019-07-22 00:00:00	2019-07-22 00:00:00	f	0
+\.
+
+
+--
+-- Name: messages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.messages_id_seq', 7, true);
+
+
+--
+-- Data for Name: news; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.news (id, project_id, title, summary, description, author_id, created_on, comments_count) FROM stdin;
+1	1	eCookbook first release !	First version was released...	eCookbook 1.0 has been released.\n\nVisit http://ecookbook.somenet.foo/	2	2006-07-19 20:40:26	1
+2	1	100,000 downloads for eCookbook	eCookbook 1.0 have downloaded 100,000 times	eCookbook 1.0 have downloaded 100,000 times	2	2006-07-19 20:42:58	0
+3	2	News on a private project	\N	This is a private news	2	2006-07-19 20:42:58	0
+\.
+
+
+--
+-- Name: news_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.news_id_seq', 3, true);
+
+
+--
+-- Data for Name: open_id_authentication_associations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.open_id_authentication_associations (id, issued, lifetime, handle, assoc_type, server_url, secret) FROM stdin;
+\.
+
+
+--
+-- Name: open_id_authentication_associations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.open_id_authentication_associations_id_seq', 1, false);
+
+
+--
+-- Data for Name: open_id_authentication_nonces; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.open_id_authentication_nonces (id, "timestamp", server_url, salt) FROM stdin;
+\.
+
+
+--
+-- Name: open_id_authentication_nonces_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.open_id_authentication_nonces_id_seq', 1, false);
+
+
+--
+-- Data for Name: projects; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.projects (id, name, description, homepage, is_public, parent_id, created_on, updated_on, identifier, status, lft, rgt, inherit_members, default_version_id, default_assigned_to_id) FROM stdin;
+1	eCookbook	Recipes management application	http://ecookbook.somenet.foo/	t	\N	2006-07-19 17:13:59	2006-07-19 20:53:01	ecookbook	1	1	10	f	\N	\N
+2	OnlineStore	E-commerce web site		f	\N	2006-07-19 17:14:19	2006-07-19 17:14:19	onlinestore	1	11	12	f	\N	\N
+3	eCookbook Subproject 1	eCookBook Subproject 1		t	1	2006-07-19 17:15:21	2006-07-19 17:18:12	subproject1	1	6	7	f	\N	\N
+4	eCookbook Subproject 2	eCookbook Subproject 2		t	1	2006-07-19 17:15:51	2006-07-19 17:17:07	subproject2	1	8	9	f	\N	\N
+5	Private child of eCookbook	This is a private subproject of a public project		f	1	2006-07-19 17:15:51	2006-07-19 17:17:07	private-child	1	2	5	f	\N	\N
+6	Child of private child	This is a public subproject of a private project		t	5	2006-07-19 17:15:51	2006-07-19 17:17:07	project6	1	3	4	f	\N	\N
+\.
+
+
+--
+-- Name: projects_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.projects_id_seq', 7, true);
+
+
+--
+-- Data for Name: projects_trackers; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.projects_trackers (project_id, tracker_id) FROM stdin;
+4	3
+1	1
+5	1
+1	2
+5	2
+5	3
+2	1
+2	2
+2	3
+3	2
+3	3
+4	1
+4	2
+1	3
+6	1
+3	1
+\.
+
+
+--
+-- Data for Name: queries; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.queries (id, project_id, name, filters, user_id, column_names, sort_criteria, group_by, type, visibility, options) FROM stdin;
+1	1	Multiple custom fields query	--- \ncf_1: \n  :values: \n  - MySQL\n  :operator: "="\nstatus_id: \n  :values: \n  - "1"\n  :operator: o\ncf_2: \n  :values: \n  - "125"\n  :operator: "="\n	1	\N	\N	\N	IssueQuery	2	\N
+2	1	Private query for cookbook	--- \ntracker_id: \n  :values: \n  - "3"\n  :operator: "="\nstatus_id: \n  :values: \n  - "1"\n  :operator: o\n	3	\N	\N	\N	IssueQuery	0	\N
+3	\N	Private query for all projects	--- \ntracker_id: \n  :values: \n  - "3"\n  :operator: "="\n	3	\N	\N	\N	IssueQuery	0	\N
+4	\N	Public query for all projects	--- \ntracker_id: \n  :values: \n  - "3"\n  :operator: "="\n	2	\N	\N	\N	IssueQuery	2	\N
+5	\N	Open issues by priority and tracker	--- \nstatus_id: \n  :values: \n  - "1"\n  :operator: o\n	1	\N	--- \n- - priority\n  - desc\n- - tracker\n  - asc\n	\N	IssueQuery	2	\N
+6	\N	Open issues grouped by tracker	--- \nstatus_id: \n  :values: \n  - "1"\n  :operator: o\n	1	\N	--- \n- - priority\n  - desc\n	tracker	IssueQuery	2	\N
+7	2	Public query for project 2	--- \ntracker_id: \n  :values: \n  - "3"\n  :operator: "="\n	2	\N	\N	\N	IssueQuery	2	\N
+8	2	Private query for project 2	--- \ntracker_id: \n  :values: \n  - "3"\n  :operator: "="\n	2	\N	\N	\N	IssueQuery	0	\N
+9	\N	Open issues grouped by list custom field	--- \nstatus_id: \n  :values: \n  - "1"\n  :operator: o\n	1	\N	--- \n- - priority\n  - desc\n	cf_1	IssueQuery	2	\N
+10	1	My spent time	--- \nuser_id: \n  :values: \n  - "me"\n  :operator: =\n	1	\N	--- \n- - spent_on\n  - desc\n	\N	TimeEntryQuery	2	\N
+\.
+
+
+--
+-- Name: queries_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.queries_id_seq', 11, true);
+
+
+--
+-- Data for Name: queries_roles; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.queries_roles (query_id, role_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: repositories; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.repositories (id, project_id, url, login, password, root_url, type, path_encoding, log_encoding, extra_info, identifier, is_default, created_on) FROM stdin;
+10	1	file:////redmine/tmp/test/subversion_repository			file:////redmine/tmp/test/subversion_repository	Repository::Subversion	\N	\N	\N	\N	t	2006-07-19 17:04:21
+11	2	svn://localhost/test			svn://localhost	Repository::Subversion	\N	\N	\N	\N	t	2006-07-19 17:04:21
+\.
+
+
+--
+-- Name: repositories_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.repositories_id_seq', 11, true);
+
+
+--
+-- Data for Name: roles; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.roles (id, name, "position", assignable, builtin, permissions, issues_visibility, users_visibility, time_entries_visibility, all_roles_managed, settings) FROM stdin;
+1	Manager	1	t	0	--- \n- :add_project\n- :edit_project\n- :close_project\n- :select_project_modules\n- :manage_members\n- :manage_versions\n- :manage_categories\n- :view_issues\n- :add_issues\n- :edit_issues\n- :copy_issues\n- :manage_issue_relations\n- :manage_subtasks\n- :add_issue_notes\n- :delete_issues\n- :view_issue_watchers\n- :add_issue_watchers\n- :set_issues_private\n- :set_notes_private\n- :view_private_notes\n- :delete_issue_watchers\n- :manage_public_queries\n- :save_queries\n- :view_gantt\n- :view_calendar\n- :log_time\n- :view_time_entries\n- :edit_time_entries\n- :delete_time_entries\n- :view_news\n- :manage_news\n- :comment_news\n- :view_documents\n- :add_documents\n- :edit_documents\n- :delete_documents\n- :view_wiki_pages\n- :export_wiki_pages\n- :view_wiki_edits\n- :edit_wiki_pages\n- :delete_wiki_pages_attachments\n- :protect_wiki_pages\n- :delete_wiki_pages\n- :rename_wiki_pages\n- :manage_wiki\n- :view_messages\n- :add_messages\n- :edit_messages\n- :delete_messages\n- :manage_boards\n- :view_files\n- :manage_files\n- :browse_repository\n- :manage_repository\n- :view_changesets\n- :manage_related_issues\n- :manage_project_activities\n- :import_issues\n	all	all	all	t	\N
+2	Developer	2	t	0	--- \n- :edit_project\n- :manage_members\n- :manage_versions\n- :manage_categories\n- :view_issues\n- :add_issues\n- :edit_issues\n- :copy_issues\n- :manage_issue_relations\n- :manage_subtasks\n- :add_issue_notes\n- :delete_issues\n- :view_issue_watchers\n- :save_queries\n- :view_gantt\n- :view_calendar\n- :log_time\n- :view_time_entries\n- :edit_own_time_entries\n- :view_news\n- :manage_news\n- :comment_news\n- :view_documents\n- :add_documents\n- :edit_documents\n- :delete_documents\n- :view_wiki_pages\n- :view_wiki_edits\n- :edit_wiki_pages\n- :protect_wiki_pages\n- :delete_wiki_pages\n- :view_messages\n- :add_messages\n- :edit_own_messages\n- :delete_own_messages\n- :manage_boards\n- :view_files\n- :manage_files\n- :browse_repository\n- :view_changesets\n	default	all	all	t	\N
+3	Reporter	3	t	0	--- \n- :edit_project\n- :manage_members\n- :manage_versions\n- :manage_categories\n- :view_issues\n- :add_issues\n- :edit_issues\n- :manage_issue_relations\n- :add_issue_notes\n- :view_issue_watchers\n- :save_queries\n- :view_gantt\n- :view_calendar\n- :log_time\n- :view_time_entries\n- :view_news\n- :manage_news\n- :comment_news\n- :view_documents\n- :add_documents\n- :edit_documents\n- :delete_documents\n- :view_wiki_pages\n- :view_wiki_edits\n- :edit_wiki_pages\n- :delete_wiki_pages\n- :view_messages\n- :add_messages\n- :manage_boards\n- :view_files\n- :manage_files\n- :browse_repository\n- :view_changesets\n	default	all	all	t	\N
+4	Non member	1	t	1	--- \n- :view_issues\n- :add_issues\n- :edit_issues\n- :manage_issue_relations\n- :add_issue_notes\n- :save_queries\n- :view_gantt\n- :view_calendar\n- :log_time\n- :view_time_entries\n- :view_news\n- :comment_news\n- :view_documents\n- :view_wiki_pages\n- :view_wiki_edits\n- :edit_wiki_pages\n- :view_messages\n- :add_messages\n- :view_files\n- :manage_files\n- :browse_repository\n- :view_changesets\n	default	all	all	t	\N
+5	Anonymous	1	t	2	--- \n- :view_issues\n- :add_issue_notes\n- :view_gantt\n- :view_calendar\n- :view_time_entries\n- :view_news\n- :view_documents\n- :view_wiki_pages\n- :view_wiki_edits\n- :view_messages\n- :view_files\n- :browse_repository\n- :view_changesets\n	default	all	all	t	\N
+\.
+
+
+--
+-- Name: roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.roles_id_seq', 5, true);
+
+
+--
+-- Data for Name: roles_managed_roles; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.roles_managed_roles (role_id, managed_role_id) FROM stdin;
+\.
+
+
+--
+-- Data for Name: schema_migrations; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.schema_migrations (version) FROM stdin;
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+20090214190337
+20090312172426
+20090312194159
+20090318181151
+20090323224724
+20090401221305
+20090401231134
+20090403001910
+20090406161854
+20090425161243
+20090503121501
+20090503121505
+20090503121510
+20090614091200
+20090704172350
+20090704172355
+20090704172358
+20091010093521
+20091017212227
+20091017212457
+20091017212644
+20091017212938
+20091017213027
+20091017213113
+20091017213151
+20091017213228
+20091017213257
+20091017213332
+20091017213444
+20091017213536
+20091017213642
+20091017213716
+20091017213757
+20091017213835
+20091017213910
+20091017214015
+20091017214107
+20091017214136
+20091017214236
+20091017214308
+20091017214336
+20091017214406
+20091017214440
+20091017214519
+20091017214611
+20091017214644
+20091017214720
+20091017214750
+20091025163651
+20091108092559
+20091114105931
+20091123212029
+20091205124427
+20091220183509
+20091220183727
+20091220184736
+20091225164732
+20091227112908
+20100129193402
+20100129193813
+20100221100219
+20100313132032
+20100313171051
+20100705164950
+20100819172912
+20101104182107
+20101107130441
+20101114115114
+20101114115359
+20110220160626
+20110223180944
+20110223180953
+20110224000000
+20110226120112
+20110226120132
+20110227125750
+20110228000000
+20110228000100
+20110401192910
+20110408103312
+20110412065600
+20110511000000
+20110902000000
+20111201201315
+20120115143024
+20120115143100
+20120115143126
+20120127174243
+20120205111326
+20120223110929
+20120301153455
+20120422150750
+20120705074331
+20120707064544
+20120714122000
+20120714122100
+20120714122200
+20120731164049
+20120930112914
+20121026002032
+20121026003537
+20121209123234
+20121209123358
+20121213084931
+20130110122628
+20130201184705
+20130202090625
+20130207175206
+20130207181455
+20130215073721
+20130215111127
+20130215111141
+20130217094251
+20130602092539
+20130710182539
+20130713104233
+20130713111657
+20130729070143
+20130911193200
+20131004113137
+20131005100610
+20131124175346
+20131210180802
+20131214094309
+20131215104612
+20131218183023
+20140228130325
+20140903143914
+20140920094058
+20141029181752
+20141029181824
+20141109112308
+20141122124142
+20150113194759
+20150113211532
+20150113213922
+20150113213955
+20150208105930
+20150510083747
+20150525103953
+20150526183158
+20150528084820
+20150528092912
+20150528093249
+20150725112753
+20150730122707
+20150730122735
+20150921204850
+20150921210243
+20151020182334
+20151020182731
+20151021184614
+20151021185456
+20151021190616
+20151024082034
+20151025072118
+20151031095005
+20160404080304
+20160416072926
+20160529063352
+20161001122012
+20161002133421
+20161010081301
+20161010081528
+20161010081600
+20161126094932
+20161220091118
+20170207050700
+20170302015225
+20170309214320
+20170320051650
+20170418090031
+20170419144536
+20170723112801
+20180501132547
+20180913072918
+20180923082945
+20180923091603
+20190315094151
+20190315102101
+20190510070108
+20190620135549
+\.
+
+
+--
+-- Data for Name: settings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.settings (id, name, value, updated_on) FROM stdin;
+\.
+
+
+--
+-- Name: settings_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.settings_id_seq', 2, true);
+
+
+--
+-- Data for Name: time_entries; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.time_entries (id, project_id, user_id, issue_id, hours, comments, activity_id, spent_on, tyear, tmonth, tweek, created_on, updated_on, author_id) FROM stdin;
+1	1	2	1	4.25	My hours	9	2007-03-23	2007	3	12	2007-03-23 11:54:18	2007-03-23 11:54:18	2
+2	1	1	1	150		9	2007-03-12	2007	3	11	2007-03-23 13:11:04	2007-03-23 13:11:04	1
+3	1	1	3	1		9	2007-04-21	2007	4	16	2007-04-21 10:20:48	2007-04-21 10:20:48	1
+4	3	1	\N	7.65000000000000036	Time spent on a subproject	10	2007-04-22	2007	4	16	2007-04-22 10:20:48	2007-04-22 10:20:48	1
+5	5	1	\N	7.65000000000000036	Time spent on a subproject	10	2011-03-22	2011	3	12	2011-03-22 10:20:48	2011-03-22 10:20:48	1
+\.
+
+
+--
+-- Name: time_entries_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.time_entries_id_seq', 5, true);
+
+
+--
+-- Data for Name: tokens; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.tokens (id, user_id, action, value, created_on, updated_on) FROM stdin;
+1	1	register	DwMJ2yIxBNeAk26znMYzYmz5dAiIina0GFrPnGTM	2007-01-20 23:39:12	2019-07-24 13:49:49.981663
+2	2	recovery	sahYSIaoYrsZUef86sTHrLISdznW6ApF36h5WSnm	2007-01-20 23:39:52	2019-07-24 13:49:49.981663
+4	2	feeds	8287bedb16ac6fba95dee159fd6e4f7ae6e92e62	2019-07-24 13:55:54.525122	2019-07-24 13:55:54.525122
+3	2	session	9e3dd3290dfde614c63664792ce0db350d8f4efe	2019-07-24 13:55:53.261916	2019-07-24 13:55:56.566612
+5	2	session	92697b8236f1e393fe72016274e02a453d6d9de7	2019-07-24 13:56:00.258359	2019-07-24 13:56:03.063412
+6	2	session	5cd4c84a5ccd17479d506aa467038726a6c03165	2019-07-24 13:56:08.460632	2019-07-24 13:56:15.14325
+7	2	session	a419889648d8c067b4fb71cb55ff3a7c44917c53	2019-07-24 13:56:18.597629	2019-07-24 13:56:24.230957
+9	1	feeds	ea1a92eea80bb9eaad1b2e9f28805a14ab4dac23	2019-07-27 02:36:10.288028	2019-07-27 02:36:10.288028
+8	1	session	b6820d51951278438a3639fc9e53247b5f6e32b7	2019-07-27 02:36:09.908013	2019-07-27 02:36:13.79725
+\.
+
+
+--
+-- Name: tokens_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.tokens_id_seq', 9, true);
+
+
+--
+-- Data for Name: trackers; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.trackers (id, name, is_in_chlog, "position", is_in_roadmap, fields_bits, default_status_id, description) FROM stdin;
+1	Bug	t	1	t	0	1	Description for Bug tracker
+2	Feature request	t	2	t	0	1	Description for Feature request tracker
+3	Support request	f	3	t	0	1	\N
+\.
+
+
+--
+-- Name: trackers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.trackers_id_seq', 3, true);
+
+
+--
+-- Data for Name: user_preferences; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.user_preferences (id, user_id, others, hide_mail, time_zone) FROM stdin;
+1	1	--- \n:no_self_notified: false\n:my_page_layout: \n  left: \n  - latestnews\n  - documents\n  right: \n  - issuesassignedtome\n  top: \n  - calendar\n	t	\N
+3	3	--- \n:no_self_notified: false\n:my_page_layout: \n  left: \n  - latestnews\n  - documents\n  right: \n  - issuesassignedtome\n  top: \n  - calendar\n	f	\N
+2	2	---\n:no_self_notified: false\n:recently_used_project_ids: '1'\n:my_page_layout:\n  left:\n  - issuesassignedtome\n  right:\n  - issuesreportedbyme\n  top:\n  - issueswatched\n:my_page_settings: {}\n	t	\N
+\.
+
+
+--
+-- Name: user_preferences_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.user_preferences_id_seq', 3, true);
+
+
+--
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.users (id, login, hashed_password, firstname, lastname, admin, status, last_login_on, language, auth_source_id, created_on, updated_on, type, identity_url, mail_notification, salt, must_change_passwd, passwd_changed_on) FROM stdin;
+3	dlopper	8f659c8d7c072f189374edacfa90d6abbc26d8ed	Dave	Lopper	f	1	\N	en	\N	2006-07-19 17:33:19	2006-07-19 17:33:19	User	\N	all	7599f9963ec07b5a3b55b354407120c0	f	\N
+4	rhill	9e4dd7eeb172c12a0691a6d9d3a269f7e9fe671b	Robert	Hill	f	1	\N	en	\N	2006-07-19 17:34:07	2006-07-19 17:34:07	User	\N	all	3126f764c3c5ac61cbfc103f25f934cf	f	\N
+5	dlopper2	1	Dave2	Lopper2	f	3	\N	en	\N	2006-07-19 17:33:19	2006-07-19 17:33:19	User	\N	all	\N	f	\N
+6		1		Anonymous	f	0	\N		\N	2006-07-19 17:33:19	2006-07-19 17:33:19	AnonymousUser	\N	only_my_events	\N	f	\N
+7	someone	8f659c8d7c072f189374edacfa90d6abbc26d8ed	Some	One	f	1	\N	en	\N	2006-07-19 17:33:19	2006-07-19 17:33:19	User	\N	only_my_events	7599f9963ec07b5a3b55b354407120c0	f	\N
+8	miscuser8	8f659c8d7c072f189374edacfa90d6abbc26d8ed	User	Misc	f	1	\N	it	\N	2006-07-19 17:33:19	2006-07-19 17:33:19	User	\N	only_my_events	7599f9963ec07b5a3b55b354407120c0	f	\N
+9	miscuser9	1	User	Misc	f	1	\N	it	\N	2006-07-19 17:33:19	2006-07-19 17:33:19	User	\N	only_my_events	\N	f	\N
+10				A Team	f	1	\N		\N	2019-07-24 13:55:37.071976	2019-07-24 13:55:37.071976	Group	\N		\N	f	\N
+11				B Team	f	1	\N		\N	2019-07-24 13:55:37.071976	2019-07-24 13:55:37.071976	Group	\N		\N	f	\N
+12				Non member users	f	1	\N		\N	2019-07-24 13:55:37.071976	2019-07-24 13:55:37.071976	GroupNonMember	\N		\N	f	\N
+13				Anonymous users	f	1	\N		\N	2019-07-24 13:55:37.071976	2019-07-24 13:55:37.071976	GroupAnonymous	\N		\N	f	\N
+2	jsmith	bfbe06043353a677d0215b26a5800d128d5413bc	John	Smith	f	1	2019-07-24 13:55:53.187455	en	\N	2006-07-19 17:32:09	2006-07-19 20:42:15	User	\N	all	67eb4732624d5a7753dcea7ce0bb7d7d	f	\N
+1	admin	b5b6ff9543bf1387374cdfa27a54c96d236a7150	Redmine	Admin	t	1	2019-07-27 02:36:09.775315	en	\N	2006-07-19 17:12:21	2006-07-19 20:57:52	User	\N	all	82090c953c4a0000a7db253b0691a6b4	f	\N
+\.
+
+
+--
+-- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.users_id_seq', 14, true);
+
+
+--
+-- Data for Name: versions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.versions (id, project_id, name, description, effective_date, created_on, updated_on, wiki_page_title, status, sharing) FROM stdin;
+1	1	0.1	Beta	2006-07-01	2006-07-19 19:00:07	2006-07-19 19:00:07	\N	closed	none
+2	1	1.0	Stable release	2019-08-13	2006-07-19 19:00:33	2006-07-19 19:00:33	ECookBookV1	locked	none
+3	1	2.0	Future version	\N	2006-07-19 19:00:33	2006-07-19 19:00:33	\N	open	none
+4	3	2.0	Future version on subproject	\N	2006-07-19 19:00:33	2006-07-19 19:00:33	\N	open	tree
+5	2	Alpha	Private Alpha	2006-07-01	2006-07-19 19:00:07	2006-07-19 19:00:07	\N	open	none
+6	5	Private Version of public subproject	Should be done any day now...	\N	2006-07-19 19:00:07	2006-07-19 19:00:07	\N	open	tree
+7	2	Systemwide visible version	\N	\N	2006-07-19 19:00:07	2006-07-19 19:00:07	\N	open	system
+\.
+
+
+--
+-- Name: versions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.versions_id_seq', 7, true);
+
+
+--
+-- Data for Name: watchers; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.watchers (id, watchable_type, watchable_id, user_id) FROM stdin;
+999578971	Issue	2	3
+580717795	Message	1	1
+362429562	Issue	2	1
+\.
+
+
+--
+-- Name: watchers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.watchers_id_seq', 999578972, true);
+
+
+--
+-- Data for Name: wiki_content_versions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.wiki_content_versions (id, wiki_content_id, page_id, author_id, data, compression, comments, updated_on, version) FROM stdin;
+1	1	1	2	\\x68312e20436f6f6b426f6f6b20646f63756d656e746174696f6e2076310a0a0a4c696e652066726f6d2076310a536f6d65205b5b646f63756d656e746174696f6e5d5d20686572652e2e2e		Page creation	2007-03-06 23:08:07	1
+2	1	1	1	\\x68312e20436f6f6b426f6f6b20646f63756d656e746174696f6e2076320a0a0a4c696e652066726f6d2076310a536f6d652075706461746564205b5b646f63756d656e746174696f6e5d5d20686572652e2e2e		Small update	2007-03-06 23:08:34	2
+3	1	1	1	\\x68312e20436f6f6b426f6f6b20646f63756d656e746174696f6e2076330a0a536f6d652075706461746564205b5b646f63756d656e746174696f6e5d5d20686572652e2e2e			2007-03-06 23:10:51	3
+4	2	2	1	\\x68312e20416e6f7468657220706167650a0a546869732069732061206c696e6b20746f2061207469636b65743a202332		\N	2007-03-07 23:18:07	1
+5	11	11	1	\\x68312e205469746c650a0a4c6f72656d20697073756d20646f6c6f722073697420616d65742c20636f6e7365637465747565722061646970697363696e6720656c69742e204d616563656e617320736564206c696265726f2e0a0a68322e2048656164696e6720310a0a405748415445564552400a0a4d616563656e61732073656420656c69742073697420616d6574206d6920616363756d73616e20766573746962756c756d206e6f6e206e65632076656c69742e2050726f696e20706f7274612074696e636964756e74206c6f72656d2c20636f6e7365717561742072686f6e63757320646f6c6f72206665726d656e74756d20696e2e0a0a4372617320697073756d2066656c69732c20756c74726963657320617420706f72747469746f722076656c2c206661756369627573206575206e756e632e0a0a68322e2048656164696e6720320a0a4d6f72626920666163696c6973697320616363756d73616e206f726369206e6f6e2070686172657472612e		\N	2007-03-07 23:16:07	2
+6	11	11	1	\\x68312e205469746c650a0a4c6f72656d20697073756d20646f6c6f722073697420616d65742c20636f6e7365637465747565722061646970697363696e6720656c69742e204d616563656e617320736564206c696265726f2e0a0a68322e2048656164696e6720310a0a405748415445564552400a0a4d616563656e61732073656420656c69742073697420616d6574206d6920616363756d73616e20766573746962756c756d206e6f6e206e65632076656c69742e2050726f696e20706f7274612074696e636964756e74206c6f72656d2c20636f6e7365717561742072686f6e63757320646f6c6f72206665726d656e74756d20696e2e0a0a68322e2048656164696e6720320a0a4d6f72626920666163696c6973697320616363756d73616e206f726369206e6f6e2070686172657472612e		\N	2007-03-07 23:18:07	3
+7	4	4	1	\\x68312e2050616765207769746820616e20696e6c696e6520696d6167650a0a5468697320697320616e20696e6c696e6520696d6167653a0a0a216c6f676f2e67696621		\N	2007-03-07 23:18:07	1
+\.
+
+
+--
+-- Name: wiki_content_versions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.wiki_content_versions_id_seq', 7, true);
+
+
+--
+-- Data for Name: wiki_contents; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.wiki_contents (id, page_id, author_id, text, comments, updated_on, version) FROM stdin;
+1	1	1	h1. CookBook documentation\n\n{{child_pages}}\n\nSome updated [[documentation]] here with gzipped history	Gzip compression activated	2007-03-06 23:10:51	3
+2	2	1	h1. Another page\n\nThis is a link to a ticket: #2\nAnd this is an included page:\n{{include(Page with an inline image)}}	\N	2007-03-07 23:18:07	1
+3	3	1	h1. Start page\n\nE-commerce web site start page	\N	2007-03-07 23:18:07	1
+4	4	1	h1. Page with an inline image\n\nThis is an inline image:\n\n!logo.gif!	\N	2007-03-07 23:18:07	1
+5	5	1	h1. Child page 1\n\nThis is a child page	\N	2007-03-07 23:18:07	1
+6	6	1	h1. Child page 2\n\nThis is a child page	\N	2007-03-07 23:18:07	1
+7	7	1	This is a child page	\N	2007-03-07 23:18:07	1
+8	8	1	This is a parent page	\N	2007-03-07 23:18:07	1
+9	9	1	This is a child page	\N	2007-03-07 23:18:07	1
+10	10	1	Page with cyrillic title	\N	2007-03-07 23:18:07	1
+11	11	1	h1. Title\n\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas sed libero.\n\nh2. Heading 1\n\n@WHATEVER@\n\nMaecenas sed elit sit amet mi accumsan vestibulum non nec velit. Proin porta tincidunt lorem, consequat rhoncus dolor fermentum in.\n\nCras ipsum felis, ultrices at porttitor vel, faucibus eu nunc.\n\nh2. Heading 2\n\nMorbi facilisis accumsan orci non pharetra.	\N	2007-03-07 23:18:07	3
+12	12	1	This is a grandchild page	\N	2007-03-07 23:18:07	1
+\.
+
+
+--
+-- Name: wiki_contents_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.wiki_contents_id_seq', 12, true);
+
+
+--
+-- Data for Name: wiki_pages; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.wiki_pages (id, wiki_id, title, created_on, protected, parent_id) FROM stdin;
+1	1	CookBook_documentation	2007-03-06 23:08:07	t	\N
+2	1	Another_page	2007-03-07 23:18:07	f	\N
+3	2	Start_page	2007-03-07 23:18:07	f	\N
+4	1	Page_with_an_inline_image	2007-03-07 23:18:07	f	1
+5	1	Child_1	2007-03-07 23:18:07	f	2
+6	1	Child_2	2007-03-07 23:18:07	f	2
+7	2	Child_page_1	2007-03-07 23:18:07	f	8
+8	2	Parent_page	2007-03-07 23:18:07	f	\N
+9	2	Child_page_2	2007-03-07 23:18:07	f	8
+10	1	Этика_менеджмента	2007-03-07 23:18:07	f	\N
+11	1	Page_with_sections	2007-03-07 23:18:07	f	\N
+12	1	Child_1_1	2007-03-07 23:18:07	f	5
+\.
+
+
+--
+-- Name: wiki_pages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.wiki_pages_id_seq', 12, true);
+
+
+--
+-- Data for Name: wiki_redirects; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.wiki_redirects (id, wiki_id, title, redirects_to, created_on, redirects_to_wiki_id) FROM stdin;
+\.
+
+
+--
+-- Name: wiki_redirects_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.wiki_redirects_id_seq', 1, false);
+
+
+--
+-- Data for Name: wikis; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.wikis (id, project_id, start_page, status) FROM stdin;
+1	1	CookBook documentation	1
+2	2	Start page	1
+5	5	Wiki	1
+\.
+
+
+--
+-- Name: wikis_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.wikis_id_seq', 6, true);
+
+
+--
+-- Data for Name: workflows; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.workflows (id, tracker_id, old_status_id, new_status_id, role_id, assignee, author, type, field_name, rule) FROM stdin;
+189	3	2	5	1	f	f	WorkflowTransition	\N	\N
+1	1	1	2	1	f	f	WorkflowTransition	\N	\N
+2	1	1	3	1	f	f	WorkflowTransition	\N	\N
+3	1	1	4	1	f	f	WorkflowTransition	\N	\N
+110	2	4	6	1	f	f	WorkflowTransition	\N	\N
+4	1	1	5	1	f	f	WorkflowTransition	\N	\N
+30	1	6	5	1	f	f	WorkflowTransition	\N	\N
+111	2	5	1	1	f	f	WorkflowTransition	\N	\N
+5	1	1	6	1	f	f	WorkflowTransition	\N	\N
+31	1	1	2	2	f	f	WorkflowTransition	\N	\N
+112	2	5	2	1	f	f	WorkflowTransition	\N	\N
+6	1	2	1	1	f	f	WorkflowTransition	\N	\N
+32	1	1	3	2	f	f	WorkflowTransition	\N	\N
+113	2	5	3	1	f	f	WorkflowTransition	\N	\N
+220	3	2	6	2	f	f	WorkflowTransition	\N	\N
+7	1	2	3	1	f	f	WorkflowTransition	\N	\N
+33	1	1	4	2	f	f	WorkflowTransition	\N	\N
+60	1	6	5	2	f	f	WorkflowTransition	\N	\N
+114	2	5	4	1	f	f	WorkflowTransition	\N	\N
+140	2	4	6	2	f	f	WorkflowTransition	\N	\N
+221	3	3	1	2	f	f	WorkflowTransition	\N	\N
+8	1	2	4	1	f	f	WorkflowTransition	\N	\N
+34	1	1	5	2	f	f	WorkflowTransition	\N	\N
+115	2	5	6	1	f	f	WorkflowTransition	\N	\N
+141	2	5	1	2	f	f	WorkflowTransition	\N	\N
+222	3	3	2	2	f	f	WorkflowTransition	\N	\N
+223	3	3	4	2	f	f	WorkflowTransition	\N	\N
+9	1	2	5	1	f	f	WorkflowTransition	\N	\N
+35	1	1	6	2	f	f	WorkflowTransition	\N	\N
+61	1	1	2	3	f	f	WorkflowTransition	\N	\N
+116	2	6	1	1	f	f	WorkflowTransition	\N	\N
+142	2	5	2	2	f	f	WorkflowTransition	\N	\N
+250	3	2	6	3	f	f	WorkflowTransition	\N	\N
+224	3	3	5	2	f	f	WorkflowTransition	\N	\N
+36	1	2	1	2	f	f	WorkflowTransition	\N	\N
+62	1	1	3	3	f	f	WorkflowTransition	\N	\N
+117	2	6	2	1	f	f	WorkflowTransition	\N	\N
+143	2	5	3	2	f	f	WorkflowTransition	\N	\N
+170	2	4	6	3	f	f	WorkflowTransition	\N	\N
+251	3	3	1	3	f	f	WorkflowTransition	\N	\N
+225	3	3	6	2	f	f	WorkflowTransition	\N	\N
+63	1	1	4	3	f	f	WorkflowTransition	\N	\N
+90	1	6	5	3	f	f	WorkflowTransition	\N	\N
+118	2	6	3	1	f	f	WorkflowTransition	\N	\N
+144	2	5	4	2	f	f	WorkflowTransition	\N	\N
+252	3	3	2	3	f	f	WorkflowTransition	\N	\N
+226	3	4	1	2	f	f	WorkflowTransition	\N	\N
+38	1	2	4	2	f	f	WorkflowTransition	\N	\N
+64	1	1	5	3	f	f	WorkflowTransition	\N	\N
+91	2	1	2	1	f	f	WorkflowTransition	\N	\N
+119	2	6	4	1	f	f	WorkflowTransition	\N	\N
+145	2	5	6	2	f	f	WorkflowTransition	\N	\N
+171	2	5	1	3	f	f	WorkflowTransition	\N	\N
+253	3	3	4	3	f	f	WorkflowTransition	\N	\N
+227	3	4	2	2	f	f	WorkflowTransition	\N	\N
+39	1	2	5	2	f	f	WorkflowTransition	\N	\N
+65	1	1	6	3	f	f	WorkflowTransition	\N	\N
+92	2	1	3	1	f	f	WorkflowTransition	\N	\N
+146	2	6	1	2	f	f	WorkflowTransition	\N	\N
+172	2	5	2	3	f	f	WorkflowTransition	\N	\N
+254	3	3	5	3	f	f	WorkflowTransition	\N	\N
+228	3	4	3	2	f	f	WorkflowTransition	\N	\N
+66	1	2	1	3	f	f	WorkflowTransition	\N	\N
+93	2	1	4	1	f	f	WorkflowTransition	\N	\N
+147	2	6	2	2	f	f	WorkflowTransition	\N	\N
+173	2	5	3	3	f	f	WorkflowTransition	\N	\N
+255	3	3	6	3	f	f	WorkflowTransition	\N	\N
+229	3	4	5	2	f	f	WorkflowTransition	\N	\N
+67	1	2	3	3	f	f	WorkflowTransition	\N	\N
+148	2	6	3	2	f	f	WorkflowTransition	\N	\N
+174	2	5	4	3	f	f	WorkflowTransition	\N	\N
+256	3	4	1	3	f	f	WorkflowTransition	\N	\N
+68	1	2	4	3	f	f	WorkflowTransition	\N	\N
+94	2	1	5	1	f	f	WorkflowTransition	\N	\N
+149	2	6	4	2	f	f	WorkflowTransition	\N	\N
+175	2	5	6	3	f	f	WorkflowTransition	\N	\N
+257	3	4	2	3	f	f	WorkflowTransition	\N	\N
+69	1	2	5	3	f	f	WorkflowTransition	\N	\N
+95	2	1	6	1	f	f	WorkflowTransition	\N	\N
+176	2	6	1	3	f	f	WorkflowTransition	\N	\N
+258	3	4	3	3	f	f	WorkflowTransition	\N	\N
+96	2	2	1	1	f	f	WorkflowTransition	\N	\N
+177	2	6	2	3	f	f	WorkflowTransition	\N	\N
+259	3	4	5	3	f	f	WorkflowTransition	\N	\N
+97	2	2	3	1	f	f	WorkflowTransition	\N	\N
+178	2	6	3	3	f	f	WorkflowTransition	\N	\N
+98	2	2	4	1	f	f	WorkflowTransition	\N	\N
+179	2	6	4	3	f	f	WorkflowTransition	\N	\N
+99	2	2	5	1	f	f	WorkflowTransition	\N	\N
+100	2	2	6	1	f	f	WorkflowTransition	\N	\N
+20	1	4	6	1	f	f	WorkflowTransition	\N	\N
+101	2	3	1	1	f	f	WorkflowTransition	\N	\N
+21	1	5	1	1	f	f	WorkflowTransition	\N	\N
+102	2	3	2	1	f	f	WorkflowTransition	\N	\N
+210	3	6	5	1	f	f	WorkflowTransition	\N	\N
+22	1	5	2	1	f	f	WorkflowTransition	\N	\N
+103	2	3	4	1	f	f	WorkflowTransition	\N	\N
+23	1	5	3	1	f	f	WorkflowTransition	\N	\N
+104	2	3	5	1	f	f	WorkflowTransition	\N	\N
+130	2	2	6	2	f	f	WorkflowTransition	\N	\N
+211	3	1	2	2	f	f	WorkflowTransition	\N	\N
+24	1	5	4	1	f	f	WorkflowTransition	\N	\N
+50	1	4	6	2	f	f	WorkflowTransition	\N	\N
+105	2	3	6	1	f	f	WorkflowTransition	\N	\N
+131	2	3	1	2	f	f	WorkflowTransition	\N	\N
+212	3	1	3	2	f	f	WorkflowTransition	\N	\N
+25	1	5	6	1	f	f	WorkflowTransition	\N	\N
+51	1	5	1	2	f	f	WorkflowTransition	\N	\N
+106	2	4	1	1	f	f	WorkflowTransition	\N	\N
+132	2	3	2	2	f	f	WorkflowTransition	\N	\N
+213	3	1	4	2	f	f	WorkflowTransition	\N	\N
+240	3	6	5	2	f	f	WorkflowTransition	\N	\N
+26	1	6	1	1	f	f	WorkflowTransition	\N	\N
+52	1	5	2	2	f	f	WorkflowTransition	\N	\N
+107	2	4	2	1	f	f	WorkflowTransition	\N	\N
+133	2	3	4	2	f	f	WorkflowTransition	\N	\N
+214	3	1	5	2	f	f	WorkflowTransition	\N	\N
+241	3	1	2	3	f	f	WorkflowTransition	\N	\N
+27	1	6	2	1	f	f	WorkflowTransition	\N	\N
+53	1	5	3	2	f	f	WorkflowTransition	\N	\N
+80	1	4	6	3	f	f	WorkflowTransition	\N	\N
+108	2	4	3	1	f	f	WorkflowTransition	\N	\N
+134	2	3	5	2	f	f	WorkflowTransition	\N	\N
+160	2	2	6	3	f	f	WorkflowTransition	\N	\N
+215	3	1	6	2	f	f	WorkflowTransition	\N	\N
+242	3	1	3	3	f	f	WorkflowTransition	\N	\N
+28	1	6	3	1	f	f	WorkflowTransition	\N	\N
+54	1	5	4	2	f	f	WorkflowTransition	\N	\N
+81	1	5	1	3	f	f	WorkflowTransition	\N	\N
+109	2	4	5	1	f	f	WorkflowTransition	\N	\N
+135	2	3	6	2	f	f	WorkflowTransition	\N	\N
+161	2	3	1	3	f	f	WorkflowTransition	\N	\N
+216	3	2	1	2	f	f	WorkflowTransition	\N	\N
+243	3	1	4	3	f	f	WorkflowTransition	\N	\N
+29	1	6	4	1	f	f	WorkflowTransition	\N	\N
+55	1	5	6	2	f	f	WorkflowTransition	\N	\N
+82	1	5	2	3	f	f	WorkflowTransition	\N	\N
+136	2	4	1	2	f	f	WorkflowTransition	\N	\N
+162	2	3	2	3	f	f	WorkflowTransition	\N	\N
+217	3	2	3	2	f	f	WorkflowTransition	\N	\N
+270	3	6	5	3	f	f	WorkflowTransition	\N	\N
+244	3	1	5	3	f	f	WorkflowTransition	\N	\N
+56	1	6	1	2	f	f	WorkflowTransition	\N	\N
+137	2	4	2	2	f	f	WorkflowTransition	\N	\N
+163	2	3	4	3	f	f	WorkflowTransition	\N	\N
+190	3	2	6	1	f	f	WorkflowTransition	\N	\N
+218	3	2	4	2	f	f	WorkflowTransition	\N	\N
+245	3	1	6	3	f	f	WorkflowTransition	\N	\N
+57	1	6	2	2	f	f	WorkflowTransition	\N	\N
+83	1	5	3	3	f	f	WorkflowTransition	\N	\N
+138	2	4	3	2	f	f	WorkflowTransition	\N	\N
+164	2	3	5	3	f	f	WorkflowTransition	\N	\N
+191	3	3	1	1	f	f	WorkflowTransition	\N	\N
+219	3	2	5	2	f	f	WorkflowTransition	\N	\N
+246	3	2	1	3	f	f	WorkflowTransition	\N	\N
+58	1	6	3	2	f	f	WorkflowTransition	\N	\N
+84	1	5	4	3	f	f	WorkflowTransition	\N	\N
+139	2	4	5	2	f	f	WorkflowTransition	\N	\N
+165	2	3	6	3	f	f	WorkflowTransition	\N	\N
+192	3	3	2	1	f	f	WorkflowTransition	\N	\N
+247	3	2	3	3	f	f	WorkflowTransition	\N	\N
+59	1	6	4	2	f	f	WorkflowTransition	\N	\N
+85	1	5	6	3	f	f	WorkflowTransition	\N	\N
+166	2	4	1	3	f	f	WorkflowTransition	\N	\N
+248	3	2	4	3	f	f	WorkflowTransition	\N	\N
+86	1	6	1	3	f	f	WorkflowTransition	\N	\N
+167	2	4	2	3	f	f	WorkflowTransition	\N	\N
+193	3	3	4	1	f	f	WorkflowTransition	\N	\N
+249	3	2	5	3	f	f	WorkflowTransition	\N	\N
+87	1	6	2	3	f	f	WorkflowTransition	\N	\N
+168	2	4	3	3	f	f	WorkflowTransition	\N	\N
+194	3	3	5	1	f	f	WorkflowTransition	\N	\N
+88	1	6	3	3	f	f	WorkflowTransition	\N	\N
+169	2	4	5	3	f	f	WorkflowTransition	\N	\N
+195	3	3	6	1	f	f	WorkflowTransition	\N	\N
+89	1	6	4	3	f	f	WorkflowTransition	\N	\N
+196	3	4	1	1	f	f	WorkflowTransition	\N	\N
+197	3	4	2	1	f	f	WorkflowTransition	\N	\N
+198	3	4	3	1	f	f	WorkflowTransition	\N	\N
+199	3	4	5	1	f	f	WorkflowTransition	\N	\N
+10	1	2	6	1	f	f	WorkflowTransition	\N	\N
+11	1	3	1	1	f	f	WorkflowTransition	\N	\N
+12	1	3	2	1	f	f	WorkflowTransition	\N	\N
+200	3	4	6	1	f	f	WorkflowTransition	\N	\N
+13	1	3	4	1	f	f	WorkflowTransition	\N	\N
+120	2	6	5	1	f	f	WorkflowTransition	\N	\N
+201	3	5	1	1	f	f	WorkflowTransition	\N	\N
+40	1	2	6	2	f	f	WorkflowTransition	\N	\N
+121	2	1	2	2	f	f	WorkflowTransition	\N	\N
+202	3	5	2	1	f	f	WorkflowTransition	\N	\N
+14	1	3	5	1	f	f	WorkflowTransition	\N	\N
+41	1	3	1	2	f	f	WorkflowTransition	\N	\N
+122	2	1	3	2	f	f	WorkflowTransition	\N	\N
+203	3	5	3	1	f	f	WorkflowTransition	\N	\N
+15	1	3	6	1	f	f	WorkflowTransition	\N	\N
+230	3	4	6	2	f	f	WorkflowTransition	\N	\N
+123	2	1	4	2	f	f	WorkflowTransition	\N	\N
+204	3	5	4	1	f	f	WorkflowTransition	\N	\N
+16	1	4	1	1	f	f	WorkflowTransition	\N	\N
+42	1	3	2	2	f	f	WorkflowTransition	\N	\N
+231	3	5	1	2	f	f	WorkflowTransition	\N	\N
+70	1	2	6	3	f	f	WorkflowTransition	\N	\N
+124	2	1	5	2	f	f	WorkflowTransition	\N	\N
+150	2	6	5	2	f	f	WorkflowTransition	\N	\N
+205	3	5	6	1	f	f	WorkflowTransition	\N	\N
+17	1	4	2	1	f	f	WorkflowTransition	\N	\N
+43	1	3	4	2	f	f	WorkflowTransition	\N	\N
+232	3	5	2	2	f	f	WorkflowTransition	\N	\N
+125	2	1	6	2	f	f	WorkflowTransition	\N	\N
+151	2	1	2	3	f	f	WorkflowTransition	\N	\N
+206	3	6	1	1	f	f	WorkflowTransition	\N	\N
+18	1	4	3	1	f	f	WorkflowTransition	\N	\N
+44	1	3	5	2	f	f	WorkflowTransition	\N	\N
+71	1	3	1	3	f	f	WorkflowTransition	\N	\N
+233	3	5	3	2	f	f	WorkflowTransition	\N	\N
+126	2	2	1	2	f	f	WorkflowTransition	\N	\N
+152	2	1	3	3	f	f	WorkflowTransition	\N	\N
+207	3	6	2	1	f	f	WorkflowTransition	\N	\N
+19	1	4	5	1	f	f	WorkflowTransition	\N	\N
+45	1	3	6	2	f	f	WorkflowTransition	\N	\N
+260	3	4	6	3	f	f	WorkflowTransition	\N	\N
+234	3	5	4	2	f	f	WorkflowTransition	\N	\N
+127	2	2	3	2	f	f	WorkflowTransition	\N	\N
+153	2	1	4	3	f	f	WorkflowTransition	\N	\N
+180	2	6	5	3	f	f	WorkflowTransition	\N	\N
+208	3	6	3	1	f	f	WorkflowTransition	\N	\N
+46	1	4	1	2	f	f	WorkflowTransition	\N	\N
+72	1	3	2	3	f	f	WorkflowTransition	\N	\N
+261	3	5	1	3	f	f	WorkflowTransition	\N	\N
+235	3	5	6	2	f	f	WorkflowTransition	\N	\N
+154	2	1	5	3	f	f	WorkflowTransition	\N	\N
+181	3	1	2	1	f	f	WorkflowTransition	\N	\N
+209	3	6	4	1	f	f	WorkflowTransition	\N	\N
+47	1	4	2	2	f	f	WorkflowTransition	\N	\N
+73	1	3	4	3	f	f	WorkflowTransition	\N	\N
+128	2	2	4	2	f	f	WorkflowTransition	\N	\N
+262	3	5	2	3	f	f	WorkflowTransition	\N	\N
+236	3	6	1	2	f	f	WorkflowTransition	\N	\N
+155	2	1	6	3	f	f	WorkflowTransition	\N	\N
+48	1	4	3	2	f	f	WorkflowTransition	\N	\N
+74	1	3	5	3	f	f	WorkflowTransition	\N	\N
+129	2	2	5	2	f	f	WorkflowTransition	\N	\N
+263	3	5	3	3	f	f	WorkflowTransition	\N	\N
+237	3	6	2	2	f	f	WorkflowTransition	\N	\N
+182	3	1	3	1	f	f	WorkflowTransition	\N	\N
+49	1	4	5	2	f	f	WorkflowTransition	\N	\N
+75	1	3	6	3	f	f	WorkflowTransition	\N	\N
+156	2	2	1	3	f	f	WorkflowTransition	\N	\N
+264	3	5	4	3	f	f	WorkflowTransition	\N	\N
+238	3	6	3	2	f	f	WorkflowTransition	\N	\N
+183	3	1	4	1	f	f	WorkflowTransition	\N	\N
+76	1	4	1	3	f	f	WorkflowTransition	\N	\N
+157	2	2	3	3	f	f	WorkflowTransition	\N	\N
+265	3	5	6	3	f	f	WorkflowTransition	\N	\N
+239	3	6	4	2	f	f	WorkflowTransition	\N	\N
+77	1	4	2	3	f	f	WorkflowTransition	\N	\N
+158	2	2	4	3	f	f	WorkflowTransition	\N	\N
+184	3	1	5	1	f	f	WorkflowTransition	\N	\N
+266	3	6	1	3	f	f	WorkflowTransition	\N	\N
+78	1	4	3	3	f	f	WorkflowTransition	\N	\N
+159	2	2	5	3	f	f	WorkflowTransition	\N	\N
+185	3	1	6	1	f	f	WorkflowTransition	\N	\N
+267	3	6	2	3	f	f	WorkflowTransition	\N	\N
+79	1	4	5	3	f	f	WorkflowTransition	\N	\N
+186	3	2	1	1	f	f	WorkflowTransition	\N	\N
+268	3	6	3	3	f	f	WorkflowTransition	\N	\N
+187	3	2	3	1	f	f	WorkflowTransition	\N	\N
+269	3	6	4	3	f	f	WorkflowTransition	\N	\N
+188	3	2	4	1	f	f	WorkflowTransition	\N	\N
+271	2	0	3	1	f	f	WorkflowTransition	\N	\N
+272	1	0	3	2	f	f	WorkflowTransition	\N	\N
+273	3	0	2	1	f	f	WorkflowTransition	\N	\N
+274	1	0	2	1	f	f	WorkflowTransition	\N	\N
+275	1	0	1	1	f	f	WorkflowTransition	\N	\N
+276	2	0	1	1	f	f	WorkflowTransition	\N	\N
+277	1	0	1	2	f	f	WorkflowTransition	\N	\N
+\.
+
+
+--
+-- Name: workflows_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.workflows_id_seq', 277, true);
